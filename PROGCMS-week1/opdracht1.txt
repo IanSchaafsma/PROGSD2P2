@@ -1,0 +1,5 @@
+include_path=C:\xampp\php\PEAR
+
+ik heb het niet kunnen vinden.
+
+niet gevonden
