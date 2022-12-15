@@ -1,18 +1,9 @@
 <?php 
-include "../../PROGCMS-week1";
-include "../private";
-include "../private/shared";
 
-$root = substr($_SERVER['SCRIPT_NAME'],
-    0,
-    strpos($_SERVER['SCRIPT_NAME'], '/public') + 7);
-define("ROOT_URL", $root);
+// Paths
+define("PRIVATE_PATH", dirname(__FILE__));
+define("SHARED_PATH", PRIVATE_PATH . "/shared");
 
-function url_path($path) {
-    if($path[0] != '/') {
-        $path = "/" . $path;
-    }
-    return ROOT_URL . $path;
-}
+include SHARED_PATH . "/functions.php";
 
 ?>

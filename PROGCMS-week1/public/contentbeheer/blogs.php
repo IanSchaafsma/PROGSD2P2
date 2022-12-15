@@ -2,7 +2,10 @@
 <?php include SHARED_PATH . "/header.php"; ?>
 
 <h1>
-  Beheer
+  Blogs
 </h1>
+    <?php 
+    lees_bestand('blogs.txt');
+    ?>
 
 <?php include SHARED_PATH . "/footer.php"; ?>
