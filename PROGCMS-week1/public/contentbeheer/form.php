@@ -11,6 +11,8 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 ?>
 
+<?php include "../../private/init.php"?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +22,7 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
     <title>Basis formulier</title>
 </head>
 <body>
+    <?php include SHARED_PATH . "/header.php"; ?>
     <form method="post" action="../private/shared/forms/voorbeeld.php">
         <input type="text" name="user" placeholder="Naam" id="user" required>
         <input type="email" name="email" placeholder="Email" id="email" required>
@@ -27,5 +30,6 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
         <input type="submit" value="Subscribe">
     </form>
+    <?php include SHARED_PATH . "/footer.php"; ?>
 </body>
 </html>

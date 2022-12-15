@@ -1,1 +1,3 @@
-<h3>Hey dit is het footer bestand!!!</h3>
+footer
+</body>
+</html>
